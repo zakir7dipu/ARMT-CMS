@@ -1,0 +1,97 @@
+<header>
+      <!-- top-header -->
+      <div class="top-header white">
+        <div class="top-header-left">
+          <a href="#"><i class="material-icons accessible-light">accessible</i></a>
+        </div>
+        <div class="top-header-right">
+          <a target="_blank" href="https://www.facebook.com/Abdur-Rahim-Memorial-Trust-106437118846274"><i class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/abdur-rahim-memorial-trust"><i class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCufEFZw464Ea5q7pDhM-vew"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <nav>
+        <div class="nav-wrapper light-green darken-1">
+          <div class="container nav-container">
+            <a href="{{ 'home'|page }}" class="brand-logo"><img class="logo-image" src="{{ 'assets/img/armt-logo.jpg'|theme }}"
+                alt="logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Who We Are <i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdown1" class="dropdown-content">
+                  <li><a class="block-text" href="{{ 'about'|page }}">About</a></li>
+                  <li><a class="block-text" href="{{ 'management'|page }}">Board of Trustees</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">What We Do <i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdown2" class="dropdown-content second-dropdown">
+                  <li><a class="block-text" href="{{ 'safewater'|page }}">Providing Safe Drinking Water</a></li>
+                  <li><a class="block-text" href="{{ 'healthcare'|page }}">Expanding Access to health Care</a></li>
+                  <li><a class="block-text" href="{{ 'hunger'|page }}">Eliminating hunger</a></li>
+                  <li><a class="block-text" href="{{ 'relentless-future-employees'|page }}">Relentless future for the Employees</a></li>
+                </ul>
+              </li>
+
+              <li><a href="{{ 'press'|page }}">Press</a></li>
+              <li><a href="{{ 'picture-book'|page }}">Picture Book</a></li>
+              <li><a href="{{ 'contact'|page }}">Contact</a></li>
+              <li>
+                <div class="center row">
+                  <div class="col s12 ">
+                    <div class="row" id="topbarsearch">
+                      <div class="input-field col s6 s12 red-text search-box">
+                        <i class="white-text material-icons">search</i>
+                        <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- mobile navbar -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <a href="{{ 'home'|page }}" class="brand-logo"><img class="logo-image" src="{{ 'assets/img/armt-logo.jpg'|theme }}"
+                alt="logo"></a>
+          </div>
+        </li>
+        <li>
+          <div class="center row">
+            <div class="col s12 ">
+              <div class="row" id="topbarsearch">
+                <div class="input-field col s6 s12 red-text search-box">
+                  <i class="light-green-text material-icons prefix">search</i>
+                  <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete light-green-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a class="dropdown-button" href="#!" data-target="dropdown1-mobile">Who We Are</a>
+          <ul id="dropdown1-mobile" class="dropdown-content">
+            <li><a class="block-text" href="{{ 'about'|page }}">About</a></li>
+            <li><a class="block-text" href="{{ 'management'|page }}">Board of Trustees</a></li>
+          </ul>
+        </li>
+        <li><a class="dropdown-button" href="#!" data-target="dropdown2-mobile">What We Do</a>
+          <ul id="dropdown2-mobile" class="dropdown-content">
+            <li><a class="block-text" href="{{ 'safewater'|page }}">Providing Safe Drinking Water</a></li>
+            <li><a class="block-text" href="{{ 'healthcare'|page }}">Expanding Access to health Care</a></li>
+            <li><a class="block-text" href="{{ 'hunger'|page }}">Eliminating hunger</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ 'press'|page }}">Press</a></li>
+        <li><a href="{{ 'contact'|page }}">Contact</a></li>
+      </ul>
+    </header>

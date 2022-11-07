@@ -1,0 +1,46 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>ARMT | {{ this.page.title }}</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Font-awesome Icon Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="{{ 'assets/css/materialize.min.css'|theme }}" media="screen,projection" />
+  <!--Import main style-->
+  <link type="text/css" rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- preloader -->
+    {% partial 'preloader' %}
+
+    <!-- header -->
+    {% partial 'header' %}
+
+    <!-- page  -->
+    {% page %}
+
+    <!-- footer -->
+    {% partial 'footer' %}
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/isotope.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/materialize.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/script.js'|theme }}"></script>
+</body>
+
+</html>
